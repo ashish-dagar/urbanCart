@@ -1,0 +1,32 @@
+// src/components/Select.module.scss
+
+.selectWrapper {
+    margin-bottom: 20px;
+  }
+  
+  .selectLabel {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border 0.3s ease;
+    background-color: #fff;
+  
+    &:focus {
+      border-color: #3498db;
+      outline: none;
+    }
+  
+    option {
+      padding: 10px;
+    }
+  }
+  

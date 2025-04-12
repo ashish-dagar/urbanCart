@@ -1,0 +1,20 @@
+@use '../../styleProperty/color' as *;
+
+
+.title {
+    color: $black;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 50px;
+  }
+  
+  .customCard {
+    // border: 2px solid #3498db;
+    // background-color: #ecf0f1;
+    // color: red;
+  }
+
+  .cardWrapper {
+    display: flex;
+   justify-content: flex-end;
+  }
