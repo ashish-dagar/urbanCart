@@ -1,0 +1,104 @@
+@use '../../styleProperty/color' as *;
+@use '../../styleProperty/mixins' as *;
+
+.btn {
+    font-weight: 600;
+    line-height: 1;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: inherit;
+    outline: none;
+    border: none;
+    transition: background 0.3s ease;
+    position: relative;
+
+    .loader {
+        width: 60px;
+        position: absolute;
+    }
+
+    &.block {
+        width: 100%;
+    }
+
+    &.mini {
+        // @include size(10px, 6px 12px, 24px);
+        font-size: 10px;
+        padding: 6px 12px;
+        height: 24px;
+    }
+
+    &.small {
+        // @include size(10px, 6px 12px, 32px);
+        font-size: 10px;
+        padding: 6px 12px;
+        height: 32px;
+    }
+
+    &.medium {
+        // @include size(10px, 6px 12px, 40px);
+        font-size: 12px;
+        padding: 6px 12px;
+        height: 40px;
+    }
+
+    &.large {
+        // @include size(10px, 6px 12px, 48px);
+        font-size: 14px;
+        padding: 6px 12px;
+        height: 48px;
+    }
+
+    // variant
+
+    &.outlined {
+        border-width: 2px;
+        border-style: solid;
+
+        &.primary {
+            // @include variant($color-primary, transparent, $color-primary, $color-white);
+            border-color: $primary-color;
+            color: $primary-color;
+            background-color: transparent
+        }
+
+        // &.success {
+        //     @include variant($color-success, transparent, $color-success, $color-white);
+        // }
+
+        // &.error {
+        //     @include variant($color-error, transparent, $color-error, $color-white);
+        // }
+
+        // &.warning {
+        //     @include variant($color-warning, transparent, $color-warning, $color-white);
+        // }
+
+        // &.default {
+        //     @include variant($color-default, transparent, $color-default, $color-white);
+        // }
+    }
+
+    // &.text {
+    //     &.primary {
+    //         @include variant(transparent, $color-primary, $color-primary, $color-white);
+    //     }
+
+    //     &.secondary {
+    //         @include variant($color-default, $color-white, transparent)
+    //     }
+
+    // }
+
+    // &.solid {
+    //     &.primary {
+    //         @include variant(transparent, $color-primary, $color-primary, $color-white);
+    //     }
+
+    //     &.secondary {
+    //         @include variant($color-default, $color-white, transparent)
+    //     }
+    // }
+}

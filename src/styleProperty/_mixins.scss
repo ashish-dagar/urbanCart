@@ -1,0 +1,18 @@
+// _mixins.scss
+
+@mixin size($font-size, $padding, $height) {
+    font-size: $font-size;
+    padding: $padding;
+    height: $height;
+  }
+  
+  @mixin variant($border-color, $background-color, $text-color, $hover-color: null) {
+    border-color: $border-color;
+    background-color: $background-color;
+    color: $text-color;
+  
+    &:hover {
+      background-color: if($hover-color != null, $hover-color, $background-color);
+    }
+  }
+  

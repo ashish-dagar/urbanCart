@@ -1,8 +1,9 @@
 import React from "react";
 import * as styles from "./login.module.scss";
-import Card from "../../component/card";
-import Input from "../../component/input";
-import Select from "../../component/select";
+import Card from "../../commonComponent/card";
+import Input from "../../commonComponent/input";
+import Select from "../../commonComponent/select";
+import Button from "../../commonComponent/Button";
 
 
 const Login = () => {
@@ -17,9 +18,18 @@ const Login = () => {
           } } />
       <div className={styles.cardWrapper}>
         <Card content="hi content" className={styles.customCard}>
-          <Input label="Username" placeholder="Enter username" value={""} onChange={function (e: React.ChangeEvent<HTMLInputElement>): void {
-            throw new Error("Function not implemented.");
-          } } />
+          <Input
+            label="Username"
+            placeholder="Enter username"
+            value={""} onChange={()=>{}}
+            />
+          <Input
+           label="Password"
+           placeholder="Enter password"
+           value={""}
+           onChange={()=>{}}
+           />
+           <Button onClick={handleClick}>Login</Button>
         </Card>
       </div>
     </div>
